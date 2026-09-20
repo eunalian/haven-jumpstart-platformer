@@ -118,3 +118,7 @@ func _physics_process(delta: float) -> void:
 		animation_player(player_state)
 	
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	position = Vector2(0,0)
